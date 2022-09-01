@@ -5,9 +5,9 @@ require __DIR__ . '/vendor/autoload.php';
 use Automattic\WooCommerce\Client;
 use Automattic\WooCommerce\HttpClient\HttpClientException;
 $woocommerce = new Client(
-    'http://wahida.jrpconnect.com',
-'ck_bf0b7b00354c51cb62196ae657a6601e37309cda',
-'cs_95ef3cbfe8758db1bba8405748d90a4c37169377',
+    'http://wahida.testdomain.com',
+'ck_bf0b7b00354c51cb62196ae657a6601eXXXXXXX', 
+'cs_95ef3cbfe8758db1bba8405748d90a4XXXXXXX',
     [
         'wp_api' => true, // Enable the WP REST API integration
         'version' => 'wc/v2' // WooCommerce WP REST API version
