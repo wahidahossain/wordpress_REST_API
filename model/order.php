@@ -1,0 +1,41 @@
+<?php
+$sql_order="INSERT INTO `order`(
+    `order_id`,
+    `order_wid`,
+    `order_date`,
+    `order_mod_date`,
+    `order_status`,
+    `order_cart_tax`,
+    `order_total`,
+    `order_total_tax`,
+    `payment_method`,
+    `payment_method_title`,
+    `order_note`,
+    `col_1`,
+    `col_2`,
+    `col_3`,
+    `col_4`,
+    `col_5`,
+    `date`
+  )
+  VALUES(
+    NULL,
+    '$order_id',
+    '$date_created',
+    '$date_modified',
+    '$status',
+    '$cart_tax',  
+    '$total',
+    '$total_tax',
+    '$payment_method',
+    '$payment_method_title',
+    '$customer_note',
+    '',
+    '',
+    '',
+    '',
+    '',
+    NOW())";
+  $result_order=mysqli_query($con, $sql_order) or die( 'Couldnot execute query'. mysqli_error($con));
+  
+?>

@@ -1,0 +1,41 @@
+<?php
+$sql_billing_address="INSERT INTO `billing_address`(
+    `billing_address_id`,
+    `order_wid`,
+    `billing_first_name`,
+    `billing_last_name`,
+    `billing_company`,
+    `billing_address1`,
+    `billing_city`,
+    `billing_state`,
+    `billing_postal_code`,
+    `billing_country`,
+    `billing_email`,
+    `billing_phone`,
+    `col_1`,
+    `col_2`,
+    `col_3`,
+    `col_4`,
+    `date`
+  )
+  VALUES(
+    NULL,
+    '$order_id',
+    '$first_name_billing',
+    '$last_name_billing',
+    '$company_billing',
+    '$address_1_billing',
+    '$city_billing',
+    '$state_billing',
+    '$postcode_billing',
+    '$country_billing',
+    '$email_billing',
+    '$phone_billing',
+    '',
+    '',
+    '',
+    '',
+    NOW())";
+  $result_billing_address=mysqli_query($con, $sql_billing_address) or die( 'Couldnot execute query'. mysqli_error($con));
+   
+?>
