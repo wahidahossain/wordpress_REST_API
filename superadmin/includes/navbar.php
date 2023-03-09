@@ -8,7 +8,7 @@ if($account_type=='superadmin'){
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">         
             <li class="nav-header"></li>           
                 <li class="nav-item">
-                  <a href="all_new_orders.php" class="nav-link">
+                  <a href="dashboard.php" class="nav-link">
                     <i class="fas fa fa-power-off"></i>
                     <p> All New Orders</p>
                   </a>

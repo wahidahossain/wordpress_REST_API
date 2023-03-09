@@ -14,6 +14,4 @@ $results = odbc_exec($connection, "select NAME from CUSTOMER where CUS_NO = '101
 while($row = @odbc_fetch_array($results)) {
 //print_r($row);
 }
-
-
 ?>
